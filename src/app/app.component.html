@@ -6,10 +6,11 @@
   <div *ngIf="showEmojiPicker">
     <emoji-mart
       (emojiClick)="addEmoji($event)"
-      [set]="'facebook'"
-      [title]="'Escolha um emoji'"
-      [emojiSize]="24"
-    ></emoji-mart>
+      [darkMode]="false"
+      color="green"
+      [set]="'twitter'"
+      [i18n]="locale">
+    </emoji-mart>
   </div>
 
   <div style="margin-top: 20px;">
